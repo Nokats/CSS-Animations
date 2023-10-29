@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(230, 191, 0);
+}
+
+.caption {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative; /*top-right-bottom-left*/
+    animation: caption;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes caption {
+    0% {top: -250px}
+    100% {top: 0}
+}
+
+.image {
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%; 
+    position: relative;
+    animation: image;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes image {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+.ingredients {
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.ingredients-table {
+    color: white;
+    margin: 0 auto;
+}
+
+.instructions {
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.instructions ol {
+    color: white;
+    margin: 0 auto;
+    width: 25%;
+    padding-bottom: 15px;
+}
+
+.recipelink {
+    opacity: 0;
+    color: grey;
+    font-size: 1rem;
+font-family: 'Quicksand', sans-serif;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+animation: recipelink;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes recipelink {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
